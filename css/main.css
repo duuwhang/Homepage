@@ -351,4 +351,17 @@ section {
 .collage .square .r2 {
   grid-row: span 2;
 }
+
+.to-top {
+  cursor: pointer;
+  display: none;
+  width: calc(40px + 2.5vmin);
+  aspect-ratio: 1;
+  position: fixed;
+  right: 2vmin;
+  bottom: 2vmin;
+  background-image: url("../assets/to-top.svg");
+  background-size: contain;
+  z-index: 999;
+}
 /*# sourceMappingURL=main.css.map */

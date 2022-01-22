@@ -69,3 +69,52 @@ function hideAll() {
   myCat.style.display = "none";
   personalLife.style.display = "none";
 }
+
+const toTopBtn = document.getElementById("to-top");
+toTopBtn.addEventListener("click", scrollToTop);
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollToTop() {
+  document.body.scrollIntoView({
+    behavior: "smooth",
+    block: "start",
+    inline: "nearest",
+  });
+  setTimeout(function () {
+    hideAll();
+  }, 500);
+}
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    toTopBtn.style.display = "block";
+  } else {
+    toTopBtn.style.display = "none";
+  }
+}
+
+calcAge(new Date(2001, 5, 20), "age-max");
+calcAge(new Date(2002, 5, 22), "age-elena");
+calcAge(new Date(2021, 3, 21), "age-mio");
+
+function calcAge(birthDay, id) {
+  let diff = Math.abs(new Date() - birthDay);
+  let age = diff / (1000 * 60 * 60 * 24 * 365);
+  let str;
+  if (age < 1) {
+    age = Math.floor(age * 12);
+    str = " month";
+  } else {
+    age = Math.floor(age);
+    str = " year";
+  }
+
+  if (age != 1) {
+    str += "s";
+  }
+  try {
+    document.getElementById(id).innerHTML = age + str;
+  } catch (error) {}
+}
