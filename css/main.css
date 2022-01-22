@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 :root {
@@ -195,5 +196,159 @@ section {
   color: white;
   font-size: 2.4em;
   z-index: 900;
+}
+
+.collage {
+  padding: 0;
+}
+
+.collage .square {
+  padding: var(--collage-gap);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  -ms-grid-rows: (1fr)[auto];
+      grid-template-rows: repeat(auto, 1fr);
+}
+
+.collage .square ul {
+  padding: 0.5em;
+  list-style-type: "• ";
+}
+
+.collage .square div {
+  padding: 1em;
+  margin: var(--collage-gap);
+  border-radius: 2vw;
+  background-color: var(--accent);
+  font-size: calc(1.9em - 0.5vw);
+  text-align: justify;
+}
+
+.collage .square div h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-size: 2em;
+}
+
+.collage .square .project {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 50%;
+      grid-template-columns: 50% 50%;
+  -ms-grid-rows: 50% 50%;
+      grid-template-rows: 50% 50%;
+  aspect-ratio: 1;
+  padding: 1em;
+  margin: var(--collage-gap);
+  border-radius: 2vw;
+  background-color: var(--accent);
+}
+
+.collage .square .project div {
+  padding: 0;
+  margin: 1em;
+  grid-column: span 2;
+  grid-row: span 1;
+  position: relative;
+}
+
+.collage .square .project div h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.collage .square .project div h2 span {
+  text-align: right;
+  float: right;
+  font-size: 0.8em;
+  font-weight: normal;
+  display: block;
+}
+
+.collage .square .project div li {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  position: absolute;
+  height: 50px;
+  bottom: 0;
+}
+
+.collage .square .project div li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.collage .square .project div li a:hover span {
+  width: 100%;
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.collage .square .project div li a img {
+  width: 50px;
+  height: 50px;
+}
+
+.collage .square .project div li a dt {
+  margin: auto 0.5em;
+}
+
+.collage .square .project div li a dt span {
+  display: block;
+  background: var(--night-text);
+  width: 0%;
+  height: 2px;
+  left: 0%;
+  top: 100%;
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.collage .square .project div li .lang {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.collage .square .project p {
+  aspect-ratio: 1;
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+.collage .square p {
+  margin: var(--collage-gap);
+}
+
+.collage .square p img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 2vw;
+}
+
+.collage .square .c1 {
+  grid-column: span 1;
+}
+
+.collage .square .c2 {
+  grid-column: span 2;
+}
+
+.collage .square .r1 {
+  grid-row: span 1;
+}
+
+.collage .square .r2 {
+  grid-row: span 2;
 }
 /*# sourceMappingURL=main.css.map */
