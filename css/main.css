@@ -71,4 +71,58 @@ section {
   margin-right: 0.05em;
   font-family: "Libre+Baskerville";
 }
+
+.hero .contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 1em;
+}
+
+.hero .contact ul li {
+  font-size: 1.4em;
+  margin-bottom: 0.7em;
+}
+
+.hero .contact ul li a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .contact ul li a:hover span {
+  width: 100%;
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.hero .contact ul li a img {
+  width: 50px;
+  height: 50px;
+}
+
+.hero .contact ul li a div {
+  margin: auto 0.5em;
+}
+
+.hero .contact ul li a div span {
+  display: block;
+  background: var(--night-text);
+  width: 0%;
+  height: 2px;
+  left: 0%;
+  top: 100%;
+  -webkit-transition: width 350ms ease-out;
+  transition: width 350ms ease-out;
+}
+
+.hero .contact .portrait {
+  width: 100%;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
+  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+          mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
+          mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+}
 /*# sourceMappingURL=main.css.map */

@@ -67,4 +67,50 @@ section {
             }
         }
     }
+
+    .contact {
+        display: flex;
+        margin-top: 1em;
+
+        ul {
+            li {
+                font-size: 1.4em;
+                margin-bottom: 0.7em;
+
+                a {
+                    display: flex;
+
+                    &:hover span {
+                        width: 100%;
+                        transition: width 350ms ease-out;
+                    }
+
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+
+                    div {
+                        margin: auto 0.5em;
+
+                        span {
+                            display: block;
+                            background: var(--night-text);
+                            width: 0%;
+                            height: 2px;
+                            left: 0%;
+                            top: 100%;
+                            transition: width 350ms ease-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .portrait {
+            width: 100%;
+            transform: scaleX(-1);
+            mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
+        }
+    }
 }
