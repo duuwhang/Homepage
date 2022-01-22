@@ -1,10 +1,74 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap");
 :root {
   --night-background: #0f0f22;
   --night-text: lightgray;
+  --contrast: #000000b5;
+  --accent: #313058;
+  --collage-gap: 1.2vmax;
 }
 
 body {
   background: var(--night-background);
   color: var(--night-text);
+  margin: 0;
+  font-family: "Outfit";
+}
+
+a {
+  cursor: pointer;
+  color: var(--night-text);
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+section {
+  padding: 5em 0;
+}
+
+.hero {
+  padding: 7.6vmin 0;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.hero .name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .name .capital {
+  font-family: "Libre+Baskerville";
+  font-size: 12em;
+  line-height: 0.67em;
+  margin-right: 0.04em;
+}
+
+.hero .name .rest {
+  line-height: 2.8em;
+}
+
+.hero .name .rest .first-name {
+  font-size: 3.58em;
+}
+
+.hero .name .rest .last-name {
+  line-height: 0.98em;
+  font-size: 6.1em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hero .name .rest .last-name .capital-i {
+  line-height: 1.05em;
+  margin-right: 0.05em;
+  font-family: "Libre+Baskerville";
 }
 /*# sourceMappingURL=main.css.map */
