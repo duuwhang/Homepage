@@ -1,0 +1,10 @@
+:root {
+  --night-background: #0f0f22;
+  --night-text: lightgray;
+}
+
+body {
+  background: var(--night-background);
+  color: var(--night-text);
+}
+/*# sourceMappingURL=main.css.map */
