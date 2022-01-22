@@ -114,3 +114,71 @@ section {
         }
     }
 }
+
+.content {
+    padding: 0;
+    margin-top: 0.2em;
+    height: 500px;
+    width: 100%;
+
+    .content-grid {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-row: auto auto;
+
+        a {
+            position: relative;
+            overflow: hidden;
+
+            &:hover div {
+                transform: scale(1.3);
+            }
+
+            .projects-img {
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
+                    radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/projects.jpg");
+            }
+
+            .dancing-img {
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
+                    radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/dancing.jpg");
+            }
+
+            .my-cat-img {
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
+                    radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/my-cat.jpg");
+            }
+
+            .personal-life-img {
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
+                    radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/personal-life.jpg");
+            }
+
+            div {
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100%;
+                width: 100%;
+                transition: transform 0.4s ease;
+                max-height: 100%;
+                max-width: 100%;
+            }
+
+            span {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 100%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                color: white;
+                font-size: 2.4em;
+                z-index: 900;
+            }
+        }
+    }
+}
