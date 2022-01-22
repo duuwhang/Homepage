@@ -98,6 +98,7 @@ function scrollFunction() {
 calcAge(new Date(2001, 5, 20), "age-max");
 calcAge(new Date(2002, 5, 22), "age-elena");
 calcAge(new Date(2021, 3, 21), "age-mio");
+calcAge(new Date(2018, 10, 21), "age-dance");
 
 function calcAge(birthDay, id) {
   let diff = Math.abs(new Date() - birthDay);
