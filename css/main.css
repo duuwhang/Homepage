@@ -364,4 +364,51 @@ section {
   background-size: contain;
   z-index: 999;
 }
+
+@media only screen and (min-width: 1080px) {
+  .hero {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1000px;
+  }
+  .hero .name {
+    margin: auto 3em;
+  }
+  .hero .contact {
+    margin: 0 3em 0 0;
+  }
+  .hero .contact ul {
+    margin: auto 1em auto 0;
+  }
+  .content .content-grid {
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media only screen and (max-width: 1246px) {
+  .collage .square .c2 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+  .collage .square .r1 {
+    aspect-ratio: 1;
+  }
+  .collage .square .project {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 838px) {
+  .collage .square .c2 {
+    aspect-ratio: 1;
+  }
+  .collage .square .r2 {
+    aspect-ratio: 1;
+  }
+  .collage .square .project div span {
+    width: 500px;
+  }
+}
 /*# sourceMappingURL=main.css.map */
