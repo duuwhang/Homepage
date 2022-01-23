@@ -216,99 +216,6 @@ section {
             }
         }
 
-        .project {
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 50% 50%;
-            aspect-ratio: 1;
-            padding: 1em;
-            margin: var(--collage-gap);
-            border-radius: 2vw;
-            background-color: var(--accent);
-
-            div {
-                padding: 0;
-                margin: 1em;
-                grid-column: span 2;
-                grid-row: span 1;
-                position: relative;
-
-                h2 {
-                    margin-top: 0;
-                    margin-bottom: 0.5em;
-
-                    span {
-                        text-align: right;
-                        float: right;
-                        font-size: 0.8em;
-                        font-weight: normal;
-                        display: block;
-                    }
-                }
-
-                ul {
-                    list-style-type: none;
-                    padding: 0;
-                    display: block;
-                    width: 100%;
-                    position: absolute;
-                    height: 125px;
-                    bottom: 0;
-                    display: flex;
-                    flex-direction: column;
-
-                    li {
-                        list-style-type: none;
-                        display: flex;
-                        width: 100%;
-                        height: 50px;
-                        margin-top: auto;
-
-                        a {
-                            display: flex;
-
-                            &:hover span {
-                                width: 100%;
-                                transition: width 350ms ease-out;
-                            }
-
-                            img {
-                                width: 50px;
-                                height: 50px;
-                            }
-
-                            dt {
-                                margin: auto 0.5em;
-
-                                span {
-                                    display: block;
-                                    background: var(--night-text);
-                                    width: 0%;
-                                    height: 2px;
-                                    left: 0%;
-                                    top: 100%;
-                                    transition: width 350ms ease-out;
-                                }
-                            }
-                        }
-                    }
-
-                    .lang {
-                        position: absolute;
-                        right: 0;
-                        top: 75%;
-                        transform: translateY(-50%);
-                    }
-                }
-            }
-
-            p {
-                aspect-ratio: 1;
-                grid-column: span 1;
-                grid-row: span 1;
-            }
-        }
-
         p {
             margin: var(--collage-gap);
 
@@ -334,6 +241,105 @@ section {
 
         .r2 {
             grid-row: span 2;
+        }
+    }
+
+    .projects {
+        grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+        grid-template-rows: repeat(auto, 1fr);
+
+        .project {
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 50%;
+            aspect-ratio: 1;
+            padding: 1em;
+            margin: var(--collage-gap);
+            border-radius: 2vw;
+            background-color: var(--accent);
+
+            div {
+                padding: 0;
+                margin: 1em;
+                padding-bottom: 125px;
+                grid-column: span 2;
+                grid-row: span 1;
+                position: relative;
+
+                h2 {
+                    margin-top: 0;
+                    margin-bottom: 0.5em;
+
+                    span {
+                        text-align: right;
+                        float: right;
+                        font-size: 0.8em;
+                        font-weight: normal;
+                        display: block;
+                    }
+                }
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                display: block;
+                width: 100%;
+                position: absolute;
+                height: 125px;
+                bottom: 0;
+                display: flex;
+                flex-direction: column;
+
+                li {
+                    list-style-type: none;
+                    display: flex;
+                    width: 100%;
+                    height: 50px;
+                    margin-top: auto;
+
+                    a {
+                        display: flex;
+
+                        &:hover span {
+                            width: 100%;
+                            transition: width 350ms ease-out;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        dt {
+                            margin: auto 0.5em;
+
+                            span {
+                                display: block;
+                                background: var(--night-text);
+                                width: 0%;
+                                height: 2px;
+                                left: 0%;
+                                top: 100%;
+                                transition: width 350ms ease-out;
+                            }
+                        }
+                    }
+                }
+
+                .lang {
+                    position: absolute;
+                    right: 0;
+                    top: 75%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+
+        p {
+            aspect-ratio: 1;
+            grid-column: span 1;
+            grid-row: span 1;
         }
     }
 }
@@ -374,6 +380,13 @@ section {
     }
 }
 
+@media only screen and (max-width: 1820px) {
+    .collage .square .project {
+        aspect-ratio: unset;
+        display: block;
+    }
+}
+
 @media only screen and (max-width: 1246px) {
     .collage .square .c2 {
         grid-column: span 1;
@@ -384,7 +397,7 @@ section {
         aspect-ratio: 1;
     }
 
-    .collage .square .project {
+    .collage .projects .project {
         display: block;
     }
 }
@@ -398,7 +411,16 @@ section {
         aspect-ratio: 1;
     }
 
-    .collage .square .project div span {
-        width: 500px;
+    .collage .projects {
+        grid-template-columns: auto;
+
+        .project {
+            div span {
+                width: 100%;
+            }
+            .lang {
+                height: 100%;
+            }
+        }
     }
 }
