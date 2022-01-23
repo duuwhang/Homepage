@@ -424,3 +424,13 @@ section {
         }
     }
 }
+
+@media only screen and (max-width: 420px) {
+    .hero {
+        width: 100%;
+        
+        .name {
+            scale: 0.8;
+        }
+    }
+}
