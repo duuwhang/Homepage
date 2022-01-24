@@ -11,6 +11,9 @@ const dancing = document.getElementById("dancing");
 const myCat = document.getElementById("my-cat");
 const personalLife = document.getElementById("personal-life");
 
+const imageBtns = document.getElementById("grid")
+const toTopBtn = document.getElementById("to-top");
+
 projectsBtn.addEventListener("click", showProjects);
 dancingBtn.addEventListener("click", showDancing);
 myCatBtn.addEventListener("click", showMyCat);
@@ -35,9 +38,7 @@ function showPersonalLife() {
 }
 
 function show(element) {
-  document
-    .getElementById("content")
-    .scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
+  imageBtns.scrollIntoView({ behavior: "smooth", block: "end", inline: "nearest" });
   if (element.style.display === dis) {
     setTimeout(function () {
       element.style.display = "none";
@@ -70,7 +71,6 @@ function hideAll() {
   personalLife.style.display = "none";
 }
 
-const toTopBtn = document.getElementById("to-top");
 toTopBtn.addEventListener("click", scrollToTop);
 window.onscroll = function () {
   scrollFunction();

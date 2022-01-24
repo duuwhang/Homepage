@@ -32,101 +32,100 @@ section {
     padding: 5em 0;
 }
 
-.hero {
-    padding: 7.6vmin 0;
-    width: 400px;
-    margin: 0 auto;
+.content {
+    padding: 0;
 
-    .name {
-        display: flex;
+    .hero {
+        padding: 7.6vmin 0;
+        width: 400px;
+        margin: 0 auto;
 
-        .capital {
-            font-family: "Libre+Baskerville";
-            font-size: 12em;
-            line-height: 0.67em;
-            margin-right: 0.04em;
-        }
+        .name {
+            display: flex;
 
-        .rest {
-            line-height: 2.8em;
-
-            .first-name {
-                font-size: 3.58em;
+            .capital {
+                font-family: "Libre+Baskerville";
+                font-size: 12em;
+                line-height: 0.67em;
+                margin-right: 0.04em;
             }
 
-            .last-name {
-                line-height: 0.98em;
-                font-size: 6.1em;
-                display: flex;
+            .rest {
+                line-height: 2.8em;
 
-                .capital-i {
-                    line-height: 1.05em;
-                    margin-right: 0.05em;
-                    font-family: "Libre+Baskerville";
+                .first-name {
+                    font-size: 3.58em;
+                }
+
+                .last-name {
+                    line-height: 0.98em;
+                    font-size: 6.1em;
+                    display: flex;
+
+                    .capital-i {
+                        line-height: 1.05em;
+                        margin-right: 0.05em;
+                        font-family: "Libre+Baskerville";
+                    }
                 }
             }
         }
-    }
 
-    .contact {
-        display: flex;
-        margin-top: 1em;
+        .contact {
+            display: flex;
+            margin-top: 1em;
 
-        ul {
-            li {
-                font-size: 1.4em;
-                margin-bottom: 0.7em;
+            ul {
+                li {
+                    font-size: 1.4em;
+                    margin-bottom: 0.7em;
 
-                a {
-                    display: flex;
+                    a {
+                        display: flex;
 
-                    &:hover span {
-                        width: 100%;
-                        transition: width 350ms ease-out;
-                    }
-
-                    img {
-                        width: 50px;
-                        height: 50px;
-                    }
-
-                    div {
-                        margin: auto 0.5em;
-
-                        span {
-                            display: block;
-                            background: var(--night-text);
-                            width: 0%;
-                            height: 2px;
-                            left: 0%;
-                            top: 100%;
+                        &:hover span {
+                            width: 100%;
                             transition: width 350ms ease-out;
+                        }
+
+                        img {
+                            width: 50px;
+                            height: 50px;
+                        }
+
+                        div {
+                            margin: auto 0.5em;
+
+                            span {
+                                display: block;
+                                background: var(--night-text);
+                                width: 0%;
+                                height: 2px;
+                                left: 0%;
+                                top: 100%;
+                                transition: width 350ms ease-out;
+                            }
                         }
                     }
                 }
             }
-        }
 
-        .portrait {
-            width: 100%;
-            transform: scaleX(-1);
-            mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
+            .portrait {
+                width: 100%;
+                transform: scaleX(-1);
+                mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
+            }
         }
     }
-}
 
-.content {
-    padding: 0;
-    margin-top: 0.2em;
-    height: 500px;
-    width: 100%;
-
-    .content-grid {
+    .grid {
         padding: 0;
+        height: 500px;
         width: 100%;
-        height: 100%;
         display: grid;
         grid-template-columns: auto auto;
+        position: absolute;
+        bottom: 0;
 
         a {
             position: relative;
@@ -200,6 +199,11 @@ section {
         }
 
         div {
+            &:hover {
+                transform: scale(1.05);
+            }
+            transition: transform 0.4s ease;
+
             padding: calc(0.3em + 0.9vw);
             margin: var(--collage-gap);
             border-radius: 2vw;
@@ -215,6 +219,11 @@ section {
         }
 
         p {
+            &:hover {
+                transform: scale(1.05);
+            }
+            transition: transform 0.4s ease;
+
             margin: var(--collage-gap);
 
             img {
@@ -246,6 +255,11 @@ section {
         grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
 
         .project {
+            &:hover {
+                transform: scale(1.03);
+            }
+            transition: transform 0.4s ease;
+
             padding: 0.9vw;
             display: grid;
             grid-template-columns: 50% 50%;
@@ -255,6 +269,12 @@ section {
             border-radius: 2vw;
             background-color: var(--accent);
 
+            p {
+                &:hover {
+                    transform: none;
+                }
+            }
+
             div {
                 padding: 0;
                 margin: 1em;
@@ -262,6 +282,10 @@ section {
                 grid-column: span 2;
                 grid-row: span 1;
                 position: relative;
+                
+                &:hover {
+                    transform: none;
+                }
 
                 h2 {
                     margin-top: 0;
@@ -344,36 +368,38 @@ section {
 .to-top {
     cursor: pointer;
     display: none;
-    width: calc(40px + 2.5vmin);
+    width: calc(50px + 2.3vmin);
     aspect-ratio: 1;
     position: fixed;
     right: 2vmin;
     bottom: 2vmin;
-    background-image: url("../assets/to-top.svg");
-    background-size: contain;
     z-index: 999;
 }
 
 @media only screen and (min-width: 1080px) {
-    .hero {
-        display: flex;
-        width: 1000px;
+    .content {
+        height: 100vh;
 
-        .name {
-            margin: auto 3em;
-        }
+        .hero {
+            display: flex;
+            width: 1000px;
 
-        .contact {
-            margin: 0 3em 0 0;
+            .name {
+                margin: auto 3em;
+            }
 
-            ul {
-                margin: auto 1em auto 0;
+            .contact {
+                margin: 0 3em 0 0;
+
+                ul {
+                    margin: auto 1em auto 0;
+                }
             }
         }
-    }
 
-    .content .content-grid {
-        grid-template-columns: auto auto auto auto;
+        .grid {
+            grid-template-columns: auto auto auto auto;
+        }
     }
 }
 
@@ -400,30 +426,33 @@ section {
 }
 
 @media only screen and (max-width: 838px) {
-    .collage .square .c2 {
-        aspect-ratio: 1;
-    }
-
-    .collage .square .r2 {
-        aspect-ratio: 1;
-    }
-
-    .collage .projects {
-        grid-template-columns: auto;
-
-        .project {
-            div span {
-                width: 100%;
+    .collage {
+        .square {
+            .c2 {
+                aspect-ratio: 1;
             }
-            .lang {
-                height: 100%;
+            .r2 {
+                aspect-ratio: 1;
+            }
+        }
+
+        .projects {
+            grid-template-columns: auto;
+
+            .project {
+                div span {
+                    width: 100%;
+                }
+                .lang {
+                    height: 100%;
+                }
             }
         }
     }
 }
 
 @media only screen and (max-width: 420px) {
-    .hero {
+    .content .hero {
         width: 375px;
 
         .name,
