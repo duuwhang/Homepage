@@ -127,7 +127,6 @@ section {
         height: 100%;
         display: grid;
         grid-template-columns: auto auto;
-        grid-row: auto auto;
 
         a {
             position: relative;
@@ -194,7 +193,6 @@ section {
         padding: var(--collage-gap);
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
 
         ul {
             padding: 0.5em;
@@ -202,7 +200,7 @@ section {
         }
 
         div {
-            padding: 1em;
+            padding: calc(0.3em + 0.9vw);
             margin: var(--collage-gap);
             border-radius: 2vw;
             background-color: var(--accent);
@@ -246,14 +244,13 @@ section {
 
     .projects {
         grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-        grid-template-rows: repeat(auto, 1fr);
 
         .project {
+            padding: 0.9vw;
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: 50% 50%;
             aspect-ratio: 1;
-            padding: 1em;
             margin: var(--collage-gap);
             border-radius: 2vw;
             background-color: var(--accent);
@@ -427,10 +424,16 @@ section {
 
 @media only screen and (max-width: 420px) {
     .hero {
-        width: 100%;
-        
-        .name {
-            scale: 0.8;
+        width: 375px;
+
+        .name,
+        .contact {
+            transform-origin: left;
+            transform: scale(0.9);
         }
+    }
+
+    .collage .square {
+        padding: 0;
     }
 }

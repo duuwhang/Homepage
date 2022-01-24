@@ -142,7 +142,6 @@ section {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  grid-row: auto auto;
 }
 
 .content .content-grid a {
@@ -208,8 +207,6 @@ section {
   display: grid;
   -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  -ms-grid-rows: (1fr)[auto];
-      grid-template-rows: repeat(auto, 1fr);
 }
 
 .collage .square ul {
@@ -218,7 +215,7 @@ section {
 }
 
 .collage .square div {
-  padding: 1em;
+  padding: calc(0.3em + 0.9vw);
   margin: var(--collage-gap);
   border-radius: 2vw;
   background-color: var(--accent);
@@ -263,11 +260,10 @@ section {
 .collage .projects {
   -ms-grid-columns: (minmax(650px, 1fr))[auto-fill];
       grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
-  -ms-grid-rows: (1fr)[auto];
-      grid-template-rows: repeat(auto, 1fr);
 }
 
 .collage .projects .project {
+  padding: 0.9vw;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 50% 50%;
@@ -275,7 +271,6 @@ section {
   -ms-grid-rows: 50% 50%;
       grid-template-rows: 50% 50%;
   aspect-ratio: 1;
-  padding: 1em;
   margin: var(--collage-gap);
   border-radius: 2vw;
   background-color: var(--accent);
@@ -452,10 +447,17 @@ section {
 
 @media only screen and (max-width: 420px) {
   .hero {
-    width: 100%;
+    width: 375px;
   }
-  .hero .name {
-    scale: 0.8;
+  .hero .name,
+  .hero .contact {
+    -webkit-transform-origin: left;
+            transform-origin: left;
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  .collage .square {
+    padding: 0;
   }
 }
 /*# sourceMappingURL=main.css.map */
