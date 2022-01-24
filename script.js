@@ -82,16 +82,14 @@ function scrollToTop() {
     block: "start",
     inline: "nearest",
   });
-  setTimeout(function () {
-    hideAll();
-  }, 500);
 }
 
 function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+  if (document.body.scrollTop > 0 || document.documentElement.scrollTop > 0) {
     toTopBtn.style.display = "block";
   } else {
     toTopBtn.style.display = "none";
+    hideAll();
   }
 }
 
