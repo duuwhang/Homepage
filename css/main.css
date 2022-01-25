@@ -117,8 +117,6 @@ section {
   height: 2px;
   left: 0%;
   top: 100%;
-  -webkit-transition: width 350ms ease-out;
-  transition: width 350ms ease-out;
 }
 
 .content .hero .contact .portrait {
@@ -139,8 +137,6 @@ section {
   display: grid;
   -ms-grid-columns: auto auto;
       grid-template-columns: auto auto;
-  position: absolute;
-  bottom: 0;
 }
 
 .content .grid a {
@@ -438,6 +434,8 @@ section {
     margin: auto 1em auto 0;
   }
   .content .grid {
+    position: absolute;
+    bottom: 0;
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
   }
@@ -484,14 +482,8 @@ section {
 
 @media only screen and (max-width: 420px) {
   .content .hero {
-    width: 375px;
-  }
-  .content .hero .name,
-  .content .hero .contact {
-    -webkit-transform-origin: left;
-            transform-origin: left;
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    width: 360px;
+    font-size: 0.8em;
   }
   .collage .square {
     padding: 0;

@@ -103,7 +103,6 @@ section {
                                 height: 2px;
                                 left: 0%;
                                 top: 100%;
-                                transition: width 350ms ease-out;
                             }
                         }
                     }
@@ -111,7 +110,6 @@ section {
             }
 
             .portrait {
-                width: 100%;
                 transform: scaleX(-1);
                 mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
             }
@@ -124,8 +122,6 @@ section {
         width: 100%;
         display: grid;
         grid-template-columns: auto auto;
-        position: absolute;
-        bottom: 0;
 
         a {
             position: relative;
@@ -282,7 +278,7 @@ section {
                 grid-column: span 2;
                 grid-row: span 1;
                 position: relative;
-                
+
                 &:hover {
                     transform: none;
                 }
@@ -398,6 +394,8 @@ section {
         }
 
         .grid {
+            position: absolute;
+            bottom: 0;
             grid-template-columns: auto auto auto auto;
         }
     }
@@ -453,13 +451,8 @@ section {
 
 @media only screen and (max-width: 420px) {
     .content .hero {
-        width: 375px;
-
-        .name,
-        .contact {
-            transform-origin: left;
-            transform: scale(0.9);
-        }
+        width: 360px;
+        font-size: 0.8em;
     }
 
     .collage .square {
