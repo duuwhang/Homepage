@@ -110,6 +110,7 @@ section {
             }
 
             .portrait {
+                width: 100%;
                 transform: scaleX(-1);
                 mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
             }
