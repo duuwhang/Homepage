@@ -375,7 +375,7 @@ section {
 
 @media only screen and (min-width: 1080px) {
     .content {
-        height: 100vh;
+        height: unset;
 
         .hero {
             display: flex;
@@ -401,9 +401,13 @@ section {
 }
 
 @media only screen and (min-height: 860px) and (min-width: 1080px) {
-    .content .grid {
-        position: absolute;
-        bottom: 0;
+    .content {
+        height: 100vh;
+
+        .grid {
+            position: absolute;
+            bottom: 0;
+        }
     }
 }
 
@@ -422,10 +426,6 @@ section {
 
     .collage .square .r1 {
         aspect-ratio: 1;
-    }
-
-    .collage .projects .project {
-        display: block;
     }
 }
 
