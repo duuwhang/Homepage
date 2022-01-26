@@ -434,10 +434,15 @@ section {
     margin: auto 1em auto 0;
   }
   .content .grid {
-    position: absolute;
-    bottom: 0;
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
+  }
+}
+
+@media only screen and (min-height: 860px) and (min-width: 1080px) {
+  .content .grid {
+    position: absolute;
+    bottom: 0;
   }
 }
 
