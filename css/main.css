@@ -468,6 +468,9 @@ section {
   .collage .square .r2 {
     aspect-ratio: 1;
   }
+  .collage .square .c1 {
+    aspect-ratio: unset;
+  }
   .collage .projects {
     -ms-grid-columns: auto;
         grid-template-columns: auto;
