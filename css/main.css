@@ -415,9 +415,6 @@ section {
 }
 
 @media only screen and (min-width: 1080px) {
-  .content {
-    height: unset;
-  }
   .content .hero {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -495,5 +492,7 @@ section {
   }
   .collage .square {
     padding: 0;
+    -ms-grid-columns: 100%;
+        grid-template-columns: 100%;
   }
 }

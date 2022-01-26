@@ -375,8 +375,6 @@ section {
 
 @media only screen and (min-width: 1080px) {
     .content {
-        height: unset;
-
         .hero {
             display: flex;
             width: 1000px;
@@ -466,5 +464,6 @@ section {
 
     .collage .square {
         padding: 0;
+        grid-template-columns: 100%;
     }
 }
