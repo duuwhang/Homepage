@@ -11,6 +11,6 @@ On there can be found:
 - and information about my personal life
 
 <div>
-    <img src="assets/readme/hero.png" alt="Settings" width=96%/>
-    <img src="assets/readme/cat.png" alt="Dynamic Timer Arrangement" width=96%/>
+    <img src="assets/readme/hero.webp" alt="Hero view" width=96%/>
+    <img src="assets/readme/cat.webp" alt="Picture collage" width=96%/>
 </div>
