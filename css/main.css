@@ -150,19 +150,19 @@ section {
 }
 
 .content .grid a .projects-img {
-  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/projects.jpg");
+  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/projects.webp");
 }
 
 .content .grid a .dancing-img {
-  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/dancing.jpg");
+  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/dancing.webp");
 }
 
 .content .grid a .my-cat-img {
-  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/my-cat.jpg");
+  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/my-cat.webp");
 }
 
 .content .grid a .personal-life-img {
-  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/content-btn/personal-life.jpg");
+  background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/personal-life.webp");
 }
 
 .content .grid a div {
