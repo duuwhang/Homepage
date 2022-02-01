@@ -223,8 +223,8 @@ section {
 }
 
 .collage .square div:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .collage .square div h2 {
@@ -242,8 +242,8 @@ section {
 }
 
 .collage .square p:hover {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .collage .square p img {
@@ -294,8 +294,8 @@ section {
 }
 
 .collage .projects .project:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
 }
 
 .collage .projects .project p:hover {
