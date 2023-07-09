@@ -1,744 +1,527 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="On here you can find my contact details, my software projects and what I have done in my life."
-    />
-    <meta name="keywords" content="Projects, Dancing, My Cat, Personal Life" />
-    <meta name="author" content="Maximilian Irran" />
-    <meta name="og:title" content="Maximilian Irran's Portfolio Homepage" />
-    <meta
-      name="og:description"
-      content="On here you can find my contact details, my software projects and what I have done in my life."
-    />
-    <meta name="og:image" content="https://maxirran.com/assets/ogimg.webp" />
-    <meta name="og:url" content="https://maxirran.com/" />
-    <title>Maximilian Irran</title>
-    <link rel="icon" type="image/png" href="/assets/panda.webp" />
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="script.js" defer></script>
-  </head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="On here you can find my contact details, my software projects and what I have done in my life." />
+        <meta name="keywords" content="Projects, Dancing, My Cat, Personal Life" />
+        <meta name="author" content="Maximilian Irran" />
+        <meta name="og:title" content="Maximilian Irran's Portfolio Homepage" />
+        <meta name="og:description" content="On here you can find my contact details, my software projects and what I have done in my life." />
+        <meta name="og:image" content="https://maxirran.com/assets/img/misc/ogimg.webp" />
+        <meta name="og:url" content="https://maxirran.com/" />
+        <title>Maximilian Irran</title>
+        <link rel="icon" type="image/png" href="/assets/img/misc/panda.webp" />
+        <link rel="stylesheet" href="css/main.css" />
+        <script src="script.js" defer></script>
+    </head>
 
-  <body>
-    <section class="content">
-      <div class="hero">
-        <div class="name">
-          <div class="capital">M</div>
-          <div class="rest">
-            <div class="first-name">aximilian</div>
-            <div class="last-name">
-              <div class="capital-i">I</div>
-              rran
+    <body>
+        <section class="content">
+            <div class="hero">
+                <div class="name">
+                    <div class="capital">M</div>
+                    <div class="rest">
+                        <div class="first-name">aximilian</div>
+                        <div class="last-name">
+                            <div class="capital-i">I</div>
+                            rran
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <a href="mailto: maxi.irran@aon.at" class="email">
+                                <img src="assets/svg/email.svg" alt="Send Email" />
+                                <div>maxi.irran@aon.at<span> </span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/duuwhang">
+                                <img src="assets/svg/github.svg" alt="Open GitHub Account" />
+                                <div>duuwhang<span> </span></div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.instagram.com/duu_whang/" class="instagram">
+                                <img src="assets/svg/instagram.svg" alt="Open Instagram Account" />
+                                <div>duu_whang<span> </span></div>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="wrapper">
+                        <img src="assets/img/hero/portrait.webp" alt="Portrait" class="portrait" />
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
 
-        <div class="contact">
-          <ul>
-            <li>
-              <a href="mailto: maxi.irran@aon.at" class="email">
-                <img src="assets/svg/email.svg" alt="Send Email" />
-                <div>maxi.irran@aon.at<span> </span></div>
-              </a>
-            </li>
-            <li>
-              <a href="https://github.com/duuwhang">
-                <img src="assets/svg/github.svg" alt="Open GitHub Account" />
-                <div>duuwhang<span> </span></div>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/duu_whang/" class="instagram">
-                <img
-                  src="assets/svg/instagram.svg"
-                  alt="Open Instagram Account"
-                />
-                <div>duu_whang<span> </span></div>
-              </a>
-            </li>
-          </ul>
-          <div class="wrapper">
-            <img
-              src="assets/img/hero/portrait.webp"
-              alt="Portrait"
-              class="portrait"
-            />
-          </div>
-        </div>
-      </div>
-
-      <div id="grid" class="grid">
-        <a id="projects-btn">
-          <div class="projects-img"></div>
-          <span>Projects</span>
-        </a>
-        <a id="dancing-btn">
-          <div class="dancing-img"></div>
-          <span>Dancing</span>
-        </a>
-        <a id="my-cat-btn">
-          <div class="my-cat-img"></div>
-          <span>My Cat</span>
-        </a>
-        <a id="personal-life-btn">
-          <div class="personal-life-img"></div>
-          <span>Personal Life</span>
-        </a>
-      </div>
-    </section>
-
-    <section id="collage" class="collage">
-      <div id="projects" class="square projects">
-        <dt class="c1 project">
-          <div>
-            <h2>Homepage<span>2022</span></h2>
-            This is my Homepage that I made without any website builders,
-            frameworks nor using any dependencies besides the tools listed on
-            the bottom right. It features a list of my contact details, a photo,
-            a scroll to top button and 4 clickable topics each having their own
-            stylized content. The 4 big image buttons show a zoom effect on
-            hover and every clickable link has a svg logo of the destination
-            page and an expanding underline. Using media queries, it is able to
-            dynamically change its layout according to the current window size.
-            This being my first front end web project and only going by numerous
-            html documentations I found on the internet, it took me quite a
-            while to get it looking the way i envisioned it.
-            <ul>
-              <li>
-                <a href="https://www.github.com/duuwhang/homepage">
-                  <img
-                    src="assets/svg/github.svg"
-                    alt="Open Homepage Repository"
-                  />
-                  <dt>repository<span> </span></dt>
+            <div id="grid" class="grid">
+                <a id="projects-btn">
+                    <div class="projects-img"></div>
+                    <span>Projects</span>
                 </a>
-              </li>
-              <dt class="lang">HTML, SCSS, JS</dt>
-            </ul>
-          </div>
-          <p>
-            <img
-              src="assets/img/projects/homepage1.webp"
-              alt="Hero of my homepage"
-            />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/homepage2.webp"
-              alt="Content of my homepage"
-            />
-          </p>
-        </dt>
-
-        <dt class="c1 project">
-          <div>
-            <h2>Organizer<span>2020-2022</span></h2>
-            Finding routes and departure times for any workday or freetime
-            activity is repetitive and annoying. This is why I always wanted to
-            develop my own android app that handles all these things as well as
-            calculates and sets my wake up alarms, bed times and structures my
-            available free time to efficently use for chores or remaining work.
-            This app is far from being released as it is my largest project,
-            I've self tought myself android development and I maintain the
-            github repository and its own fully functional android CI/CD
-            pipeline to run tests on an emulator and create a github release
-            whenever I commit a new version code and release notes. Using no
-            preset pipeline - just the free hosting service Azure Pipelines.
-            <ul>
-              <li>
-                <a href="https://www.github.com/duuwhang/organizer">
-                  <img
-                    src="assets/svg/github.svg"
-                    alt="Open Organizer Repository"
-                  />
-                  <dt>repository<span> </span></dt>
+                <a id="dancing-btn">
+                    <div class="dancing-img"></div>
+                    <span>Dancing</span>
                 </a>
-              </li>
-              <dt class="lang">Android Studio, Java, Azure Pipelines</dt>
-            </ul>
-          </div>
-          <p>
-            <img
-              src="assets/img/projects/organizer1.webp"
-              alt="Organizer calendar view"
-            />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/organizer2.webp"
-              alt="Organizer todo list view"
-            />
-          </p>
-        </dt>
-
-        <dt class="c1 project">
-          <div>
-            <h2>TurnTimer<span>2020-2022</span></h2>
-            Similar to the Organizer project, TurnTimer is an android app that
-            was requested from a friend. The requirements were for it to be able
-            to have multiple timers that count down alike a chess clock but for
-            differnet board games and fully customizable. You can change the
-            amount of timers, countdown or stopwatch mode, the start time as
-            well as whether or not it should save the state on close. The app is
-            fully released but I add occasional updates as new bugs, android
-            versions or requirements emerge. It has the same pipeline as the
-            Organizer project attached - automating the development process by a
-            great margin. I also used this project to practise Test Driven
-            Development (TDD) as I went along.
-            <ul>
-              <li>
-                <a href="https://www.github.com/duuwhang/turntimer">
-                  <img
-                    src="assets/svg/github.svg"
-                    alt="Open TurnTimer Repository"
-                  />
-                  <dt>repository<span> </span></dt>
+                <a id="my-cat-btn">
+                    <div class="my-cat-img"></div>
+                    <span>My Cat</span>
                 </a>
-              </li>
-              <dt class="lang">Android Studio, Java, Azure Pipelines, TDD</dt>
-            </ul>
-          </div>
-          <p>
-            <img
-              src="assets/img/projects/turntimer1.webp"
-              alt="TurnTimer timers"
-            />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/turntimer2.webp"
-              alt="TurnTimer settings"
-            />
-          </p>
-        </dt>
-
-        <dt class="c1 project">
-          <div>
-            <h2>NonoLite<span>2020-2022</span></h2>
-            is a game about solving Nonograms in limited time with randomly
-            occuring difficulty increasing events like a part of the screen
-            being blocked for a set time. I am developing this project alongside
-            a friend, hence the remote github repository. We have not released a
-            version yet. It is a fun side project to practise working in a team.
-            <ul>
-              <li>
-                <a href="https://github.com/geo-bert/nonolite">
-                  <img
-                    src="assets/svg/github.svg"
-                    alt="Open NonoLite Repository"
-                  />
-                  <dt>repository<span> </span></dt>
+                <a id="personal-life-btn">
+                    <div class="personal-life-img"></div>
+                    <span>Personal Life</span>
                 </a>
-              </li>
-              <dt class="lang">Processing 3, Java</dt>
-            </ul>
-          </div>
-          <p>
-            <img
-              src="assets/img/projects/nonolite1.webp"
-              alt="First NonoLite level"
-            />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/nonolite2.webp"
-              alt="Higher level in the NonoLite game"
-            />
-          </p>
-        </dt>
+            </div>
+        </section>
 
-        <dt class="c1 project">
-          <div>
-            <h2>KeyS<span>2020</span></h2>
-            Through the guidance of the ITSP-Services company and in a team of 3
-            students with a teacher as the project mentor, we developed our
-            final project of the HTL Salzburg. KeyS is a secure data management
-            system with the goal of being able to securely share company
-            internal licenses, passwords and important documents. The data is
-            stored on a Database and can be accessed through a CLI-Tool or the
-            webpage. There you can also modify the access permissions of users.
-            My task was to develop the Client Library, CLI-Tool and design the
-            cryptographic processes used.
-            <ul>
-              <li>
-                <a
-                  href="http://www.htl-salzburg.ac.at/elektronik-technische-informatik-diplomarbeiten/758.html"
-                >
-                  <img src="assets/svg/htl.svg" alt="Open HTL KeyS Page" />
-                  <dt>page<span> </span></dt>
-                </a>
-              </li>
-              <li class="doc">
-                <a href="/assets/pdf/KeyS.pdf">
-                  <img src="assets/svg/pdf.svg" alt="Download KeyS paper" />
-                  <dt>paper<span> </span></dt>
-                </a>
-              </li>
-              <dt class="lang">.NET, C#, REST, TDD</dt>
-            </ul>
-          </div>
-          <p>
-            <img src="assets/img/projects/keys1.webp" alt="KeyS logo" />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/keys2.webp"
-              alt="KeyS functionality"
-            />
-          </p>
-        </dt>
+        <section id="collage" class="collage">
+            <div id="projects" class="square projects">
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>Homepage</label>
+                            <span>2022</span>
+                        </h2>
+                        This is my Homepage that I made without any website builders, frameworks nor using any dependencies besides the tools listed on the bottom right. It
+                        features a list of my contact details, a photo, a scroll to top button and 4 clickable topics each having their own stylized content. The 4 big image
+                        buttons show a zoom effect on hover and every clickable link has a svg logo of the destination page and an expanding underline. Using media queries, it is
+                        able to dynamically change its layout according to the current window size. This being my first front end web project and only going by numerous html
+                        documentations I found on the internet, it took me quite a while to get it looking the way i envisioned it.
+                        <ul>
+                            <li>
+                                <a href="https://www.github.com/duuwhang/homepage">
+                                    <img src="assets/svg/github.svg" alt="Open Homepage Repository" />
+                                    <dt>repository<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">HTML, SCSS, JS</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/homepage1.webp" alt="Hero of my homepage" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/homepage2.webp" alt="Content of my homepage" />
+                    </p>
+                </dt>
 
-        <dt class="c1 project">
-          <div>
-            <h2>Acoustic Levitation<span>2019</span></h2>
-            As the project in the subject "Hardware Development" in the second
-            to last grade we developed an acoustic levitatior. The device lets
-            small objects with a low density float when you put them between the
-            2 speakers. This works as the speakers emmit ultrasonic soundwaves
-            that create a standing wave at specific intervals. I was working in
-            a team of 2 - me and a classmate where I was responsible for the
-            code running on the micro processor and helped with the design of
-            the circuit board.
-            <ul>
-              <li>
-                <a href="/assets/pdf/Acoustic_Levitation.pdf">
-                  <img
-                    src="assets/svg/pdf.svg"
-                    alt="Download Acoustic Levitation paper"
-                  />
-                  <dt>paper<span> </span></dt>
-                </a>
-              </li>
-              <dt class="lang">C, EAGLE</dt>
-            </ul>
-          </div>
-          <p>
-            <img
-              src="assets/img/projects/acoustic1.webp"
-              alt="Me holding my cat"
-            />
-          </p>
-          <p>
-            <img
-              src="assets/img/projects/acoustic2.webp"
-              alt="Me holding my cat"
-            />
-          </p>
-        </dt>
-      </div>
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>Organizer</label>
+                            <span>2020-2022</span>
+                        </h2>
+                        Finding routes and departure times for any workday or freetime activity is repetitive and annoying. This is why I always wanted to develop my own android
+                        app that handles all these things as well as calculates and sets my wake up alarms, bed times and structures my available free time to efficently use for
+                        chores or remaining work. This app is far from being released as it is my largest project, I've self tought myself android development and I maintain the
+                        github repository and its own fully functional android CI/CD pipeline to run tests on an emulator and create a github release whenever I commit a new
+                        version code and release notes. Using no preset pipeline - just the free hosting service Azure Pipelines.
+                        <ul>
+                            <li>
+                                <a href="https://www.github.com/duuwhang/organizer">
+                                    <img src="assets/svg/github.svg" alt="Open Organizer Repository" />
+                                    <dt>repository<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">Android Studio, Java, Azure Pipelines</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/organizer1.webp" alt="Organizer calendar view" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/organizer2.webp" alt="Organizer todo list view" />
+                    </p>
+                </dt>
 
-      <div id="dancing" class="square dancing">
-        <p class="c2 r2" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/latin.webp" alt="Me holding my cat" />
-        </p>
-        <div class="c1 r2">
-          <h2>Ballroom Dancing</h2>
-          Started out as just visiting a youth class to meet people but I and
-          Elena both realised that there had to more than just the social aspect
-          and we seperately decided to visit the follow up advanced course where
-          we met the first time and became partners. We slowly formed a very
-          close friend group with other pairs and became more and more addicted
-          to the feeling of improvement and showing it all off. Over the next 3
-          years we visited balls, danced the openings in formations and even
-          choreographed several ball opening dances ourselves to earn a little
-          money on the side - but we mostly did it for the fun of it. The dance
-          floor was our new home, practising almost every day of the week for
-          2-6 hours at a time - whenever the dancing school was open. We could
-          dance: Viennese Waltz, English Waltz, Foxtrott, Tango, Slowfox, Rumba,
-          Cha Cha, Samba, Jive, Paso Doble, Boogie, Salsa, Disco Samba,
-          Rock'n'Roll and Discofox.
-        </div>
-        <p class="c1 r2">
-          <img src="assets/img/dancing/together.webp" alt="Me holding my cat" />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Balls</h2>
-          Luckily Elena and I shared the desire to dance on every ball we could and so
-          begun the restless ball seasons. You see the austrian ball season
-          streches from january to around may. And as opportunities arose to
-          attend some for free or even perform on the dancefloor - we took them
-          all. Sometimes even going on 3 in a single week, dancing late into the
-          night after a school day or after two dancing classes on the weekend.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/ball.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/dancing/black-white.webp"
-            alt="Me holding my cat"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/chacha.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/group.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/dancing/latin-formation.webp"
-            alt="Me holding my cat"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Competitive</h2>
-          After getting the chance to attend a dancing class to improve our
-          technique, we quickly fell in love with the tournament or competitive
-          dancing style which showed us a lot more room for improvement. 1,5
-          years into extensive training on our own as well as 2 classes per week
-          we decided to try out dancing in a real competition. But the global
-          covid pandemic shut the event down 2 days afore.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/kicks.webp" alt="Me holding my cat" />
-        </p>
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>TurnTimer</label>
+                            <span>2020-2022</span>
+                        </h2>
+                        Similar to the Organizer project, TurnTimer is an android app that was requested from a friend. The requirements were for it to be able to have multiple
+                        timers that count down alike a chess clock but for differnet board games and fully customizable. You can change the amount of timers, countdown or stopwatch
+                        mode, the start time as well as whether or not it should save the state on close. The app is fully released but I add occasional updates as new bugs,
+                        android versions or requirements emerge. It has the same pipeline as the Organizer project attached - automating the development process by a great margin.
+                        I also used this project to practise Test Driven Development (TDD) as I went along.
+                        <ul>
+                            <li>
+                                <a href="https://www.github.com/duuwhang/turntimer">
+                                    <img src="assets/svg/github.svg" alt="Open TurnTimer Repository" />
+                                    <dt>repository<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">Android Studio, Java, Azure Pipelines, TDD</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/turntimer1.webp" alt="TurnTimer timers" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/turntimer2.webp" alt="TurnTimer settings" />
+                    </p>
+                </dt>
 
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/tango.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/follow.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/standard.webp" alt="Me holding my cat" />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Ten Dance</h2>
-          Looking through the many categories a competition had to offer we
-          decided to stick with Ten Dance. It includes the 5 latin and 5
-          standard dances that we already were familiar with and are commonly
-          seen on a competition's dancefloor.
-          <br />
-          Standard: Viennese Waltz, English Waltz, Tango, Quickstep, Slowfox
-          <br />
-          Latin: Rumba, Cha Cha, Samba, Jive, Paso Doble.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/shoes.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/dancing/frame-her.webp"
-            alt="Me holding my cat"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/frame-me.webp" alt="Me holding my cat" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/dancing/turn.webp" alt="Me holding my cat" />
-        </p>
-      </div>
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>NonoLite</label>
+                            <span>2020-2022</span>
+                        </h2>
+                        is a game about solving Nonograms in limited time with randomly occuring difficulty increasing events like a part of the screen being blocked for a set
+                        time. I am developing this project alongside a friend, hence the remote github repository. We have not released a version yet. It is a fun side project to
+                        practise working in a team.
+                        <ul>
+                            <li>
+                                <a href="https://github.com/geo-bert/nonolite">
+                                    <img src="assets/svg/github.svg" alt="Open NonoLite Repository" />
+                                    <dt>repository<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">Processing 3, Java</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/nonolite1.webp" alt="First NonoLite level" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/nonolite2.webp" alt="Higher level in the NonoLite game" />
+                    </p>
+                </dt>
 
-      <div id="my-cat" class="square my-cat">
-        <div class="c1 r2">
-          <h2>Mio</h2>
-          is a cute black and white housecat with big ears. He is currently
-          <span id="age-mio">? Years</span>
-          old and the most curious tom cat you can imagine. Although him being
-          an apartment cat, I take him on occasional walks in the park and I am
-          planning on cat proofing the balcony so he can enjoy the fresh air
-          whenever he wants. It was not always easy raising a hyperactive cat in
-          a small apartment as he woke us every morning at 5 am, biting our
-          feet. He destroyed everything with his small teeth and would tear
-          apart anything he found including some of Elena's favorite jackets. As
-          he grew up began getting calmer although he still chases his favorite
-          toy mouses in at hyperspeed through the apartment.
-        </div>
-        <p class="c2 r2" style="aspect-ratio: 1">
-          <img src="assets/img/my-cat/holding.webp" alt="Me holding my cat" />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Skills</h2>
-          <ul>
-            <li>Boop a finger</li>
-            <li>Sit</li>
-            <li>Give Paw</li>
-            <li>Follow a finger</li>
-            <li>Hunt feet</li>
-            <li>Climb everything</li>
-            <li>Play fetch</li>
-          </ul>
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/bush.webp"
-            alt="Little hunter posing in a bush"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/teeth.webp"
-            alt="Mio biting a sleeve with 2 cute teeth showing"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/my-cat/young.webp" alt="Only 3 months old" />
-        </p>
-        <div class="c2 r1">
-          <h2>Story</h2>
-          My girlfriend's family found Mio abandoned on a parking spot - he was
-          starving and not older than 3 months. They took him in but weren't
-          able to keep him at their place and they didn't find someone else to
-          take him in. I have always wanted to have a cat ever since I was a kid
-          so my girlfriend and I decided to adopt him. Just a few weeks later he
-          sat in our apartment - the cutest, most playful and affectionate cat
-          in the whole world.
-        </div>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Favourite Spots</h2>
-          <ul>
-            <li>On my gaming chair</li>
-            <li>Behind my keyboard</li>
-            <li>On his platform on the window</li>
-            <li>On the catbed in the middle of our 2 desks</li>
-            <li>In the middle of the couch</li>
-            <li>In the laundry basket</li>
-          </ul>
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/chair.webp"
-            alt="Laying streched out on a gaming chair"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/keyboard.webp"
-            alt="Sleeping between my keyboard and my screen"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/window.webp"
-            alt="Sleeping on his platform on the window"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img src="assets/img/my-cat/cat.webp" alt="Cat and 2 little paws" />
-        </p>
-        <p class="c2 r2" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/tree.webp"
-            alt="In a tree biting a branch"
-          />
-        </p>
-        <p class="c1 r2">
-          <img src="assets/img/my-cat/catwalk.webp" alt="Mio's catwalk" />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/my-cat/belly.webp"
-            alt="On his back getting belly rubs"
-          />
-        </p>
-      </div>
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>KeyS</label>
+                            <span>2020</span>
+                        </h2>
+                        Through the guidance of the ITSP-Services company and in a team of 3 students with a teacher as the project mentor, we developed our final project of the
+                        HTL Salzburg. KeyS is a secure data management system with the goal of being able to securely share company internal licenses, passwords and important
+                        documents. The data is stored on a Database and can be accessed through a CLI-Tool or the webpage. There you can also modify the access permissions of
+                        users. My task was to develop the Client Library, CLI-Tool and design the cryptographic processes used.
+                        <ul>
+                            <li>
+                                <a href="http://www.htl-salzburg.ac.at/elektronik-technische-informatik-diplomarbeiten/758.html">
+                                    <img src="assets/svg/htl.svg" alt="Open HTL KeyS Page" />
+                                    <dt>page<span> </span></dt>
+                                </a>
+                            </li>
+                            <li class="doc">
+                                <a href="/assets/pdf/KeyS.pdf">
+                                    <img src="assets/svg/pdf.svg" alt="Download KeyS paper" />
+                                    <dt>paper<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">.NET, C#, REST, TDD</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/keys1.webp" alt="KeyS logo" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/keys2.webp" alt="KeyS functionality" />
+                    </p>
+                </dt>
 
-      <div id="personal-life" class="square personal-life">
-        <p class="c1 r2">
-          <img
-            src="assets/img/personal-life/diploma.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>About Me</h2>
-          Hi, I am
-          <span id="age-max">? Years</span> old and graduated from the HTL
-          Salzburg in may 2021. I was born and raised in Salzburg and currently
-          have my own flat, although I am not planning on staying here. Software
-          development, gaming and repairing mobile phones myself count to my
-          hobbies. After having tried out many different sports I stuck with
-          dancing where I met my dancing partner and girlfriend Elena.
-        </div>
-        <p class="c1 r2">
-          <img
-            src="assets/img/personal-life/ellie.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Elena</h2>
-          My beautiful girlfriend. She is currently
-          <span id="age-elena">? Years</span>
-          old and means the world to me. We met
-          <span id="age-dance">? Years</span>
-          ago in a dance class and it didn't take long until we became dance
-          partners, opening balls and dancing in formations. After 2 years we
-          started our relationship in november 2020. She graduated in may 2020
-          and currently visits university, studying graphic design. Elena loves
-          crafting, drawing and reading.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/portrait.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/couple.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Friends</h2>
-          Most of my friends I am still in contact with I met in dance school as
-          the majority of my childhood friends and former school classmates are
-          studying or working in different cities now. Nonetheless, the closest
-          of my friends and I still try to keep in contact through talking on
-          discord or going on an adventure every now and then.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/friends.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/illusion.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/mountain.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Croatia</h2>
-          The best adventure I have ever been on has to the trip to croatia with
-          Elena and her family. Sleeping in a tiny tent at the rocky beach of a
-          clear water ocean bay. Watching the stars at night, haggling for fresh
-          fish in the morning and dipping into the cool blue ocean's water at
-          noon. We also went stand up paddling and did some hiking over the
-          little mountains of Cres.
-        </div>
-        <p class="c1 r2">
-          <img
-            src="assets/img/personal-life/forest.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/surf.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/icecream.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/bay.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c2 r1">
-          <img
-            src="assets/img/personal-life/croatia.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Adventure</h2>
-          I love doing backyard campfires with friends and throwing in any
-          branch I can find. Over the years I have also been on the occasional
-          snowboard trip, though I wouldn't say I'm great. My girlfriend and I
-          love carving pumpkins and building snow animals together. The
-          adventures I'm most proud of are everything I've done in the urbex
-          category.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/campfire.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/pumpkin.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/snow-elephant.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Urban Exploration</h2>
-          or short urbex describes the act of exploring abandoned buildings,
-          hidden places or high rooftops. I came across this hobby through my
-          way too short parkour journey and it has fascinated me ever since.
-          Climbing cranes and buildings, jumping across rooftops and just
-          wanting to know what lies behind that old factory I've walked past my
-          whole life.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/paracelsius.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c2 r2" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/knees.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c2 r1">
-          <img
-            src="assets/img/personal-life/gaisberg.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <div class="c1" style="aspect-ratio: 1">
-          <h2>Military</h2>
-          As an austrian citizen, I absolved my 6 month mandatory military
-          service in 2021. Although not having had a good time at all there and
-          not really accomplishing anything nor earning any savings during this
-          time period, my relationship with my girlfriend grew a lot stronger.
-        </div>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/military.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/doggo.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
+                <dt class="c1 project">
+                    <div>
+                        <h2>
+                            <label>Acoustic Levitation</label>
+                            <span>2019</span>
+                        </h2>
+                        As the project in the subject "Hardware Development" in the second to last grade we developed an acoustic levitatior. The device lets small objects with a
+                        low density float when you put them between the 2 speakers. This works as the speakers emmit ultrasonic soundwaves that create a standing wave at specific
+                        intervals. I was working in a team of 2 - me and a classmate where I was responsible for the code running on the micro processor and helped with the design
+                        of the circuit board.
+                        <ul>
+                            <li>
+                                <a href="/assets/pdf/Acoustic_Levitation.pdf">
+                                    <img src="assets/svg/pdf.svg" alt="Download Acoustic Levitation paper" />
+                                    <dt>paper<span> </span></dt>
+                                </a>
+                            </li>
+                            <dt class="lang">C, EAGLE</dt>
+                        </ul>
+                    </div>
+                    <p>
+                        <img src="assets/img/projects/acoustic1.webp" alt="Me holding my cat" />
+                    </p>
+                    <p>
+                        <img src="assets/img/projects/acoustic2.webp" alt="Me holding my cat" />
+                    </p>
+                </dt>
+            </div>
 
-        <p class="c1" style="aspect-ratio: 1">
-          <img
-            src="assets/img/personal-life/march.webp"
-            alt="Cat and 2 little paws"
-          />
-        </p>
-      </div>
-    </section>
+            <div id="dancing" class="square dancing">
+                <p class="c2 r2" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/latin.webp" alt="Me holding my cat" />
+                </p>
+                <div class="c1 r2">
+                    <h2>Ballroom Dancing</h2>
+                    It started out with me visiting a youth dancing class to meet people but Elena and I both realised that there had to be more than just social dancing. So we
+                    seperately decided to visit the follow up advanced course where we met for the first time and became partners. We slowly formed a very close friend group with
+                    other pairs and became more and more addicted to the feeling of improvement and showing it all off. Over the next 3 years we visited balls, danced the openings
+                    in formations and even choreographed several ball opening dances ourselves to earn a little money on the side - but we mostly did it for the fun of it. The
+                    dance floor was our new home, practising almost every day of the week for 2-6 hours at a time - whenever the dancing school was open. We could dance: English
+                    Waltz, Tango, Quickstep, Slowfox, Viennese Waltz, Cha Cha, Rumba, Jive, Samba, Paso Doble, Salsa, and Discofox.
+                </div>
+                <p class="c1 r2">
+                    <img src="assets/img/dancing/together.webp" alt="Me holding my cat" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Balls</h2>
+                    Luckily Elena and I shared the desire to dance on every ball we could and so begun the restless ball seasons. You see the austrian ball season streches roughly
+                    from january to may. And as opportunities arose to attend some for free or even perform on the dancefloor - we took them all. Sometimes even going on 3 in a
+                    single week, dancing late into the night after a school day or after two dancing lessons on the weekend.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/ball.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/black-white.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/chacha.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/group.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/latin-formation.webp" alt="Me holding my cat" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Competitive</h2>
+                    After getting the chance to attend a dancing class to improve our technique, we quickly fell in love with the tournament or competitive dancing style which
+                    showed us a lot more room for improvement. 1,5 years into extensive training on our own as well as 2 classes per week we decided to try out dancing in a real
+                    competition. But the global covid pandemic shut the event down 2 days afore.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/kicks.webp" alt="Me holding my cat" />
+                </p>
 
-    <img
-      id="to-top"
-      class="to-top"
-      src="assets/svg/to-top.svg"
-      alt="Back to top"
-    />
-  </body>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/tango.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/follow.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/standard.webp" alt="Me holding my cat" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Ten Dance</h2>
+                    Looking through the many categories a competition had to offer we decided to stick with Ten Dance. It includes the 5 latin and 5 standard dances that we already
+                    were familiar with and are commonly seen on a competition's dancefloor.
+                    <br />
+                    Ballroom: English Waltz, Tango, Quickstep, Slowfox, Viennese Waltz
+                    <br />
+                    Latin: Cha Cha, Rumba, Jive, Samba, Paso Doble.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/shoes.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/frame-her.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/frame-me.webp" alt="Me holding my cat" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/dancing/turn.webp" alt="Me holding my cat" />
+                </p>
+            </div>
+
+            <div id="my-cat" class="square my-cat">
+                <div class="c1 r2">
+                    <h2>Mio</h2>
+                    is a cute black and white housecat with big ears. He is currently
+                    <span id="age-mio">? Years</span>
+                    old and the most curious tom cat you can imagine. Although him being an apartment cat, I take him on occasional walks in the park and I am planning on cat
+                    proofing the balcony so he can enjoy the fresh air whenever he wants. It was not always easy raising a hyperactive cat in a small apartment as he woke us every
+                    morning at 5 am, biting our feet. He destroyed everything with his small teeth and would tear apart anything he found including some of Elena's favorite
+                    jackets. As he grew up began getting calmer although he still chases his favorite toy mouses in at hyperspeed through the apartment.
+                </div>
+                <p class="c2 r2" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/holding.webp" alt="Me holding my cat" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Skills</h2>
+                    <ul>
+                        <li>Boop a finger</li>
+                        <li>Sit</li>
+                        <li>Give Paw</li>
+                        <li>Follow a finger</li>
+                        <li>Hunt feet</li>
+                        <li>Climb everything</li>
+                        <li>Play fetch</li>
+                    </ul>
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/bush.webp" alt="Little hunter posing in a bush" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/teeth.webp" alt="Mio biting a sleeve with 2 cute teeth showing" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/young.webp" alt="Only 3 months old" />
+                </p>
+                <div class="c2 r1">
+                    <h2>Story</h2>
+                    My girlfriend's family found Mio abandoned on a parking spot - he was starving and not older than 3 months. They took him in but weren't able to keep him at
+                    their place and they didn't find someone else to take him in. I have always wanted to have a cat ever since I was a kid so my girlfriend and I decided to adopt
+                    him. Just a few weeks later he sat in our apartment - the cutest, most playful and affectionate cat in the whole world.
+                </div>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Favourite Spots</h2>
+                    <ul>
+                        <li>On my chair</li>
+                        <li>Behind my keyboard</li>
+                        <li>On his platform on the window</li>
+                        <li>In the middle of the couch</li>
+                        <li>In the laundry basket</li>
+                    </ul>
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/chair.webp" alt="Laying streched out on a gaming chair" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/keyboard.webp" alt="Sleeping between my keyboard and my screen" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/window.webp" alt="Sleeping on his platform on the window" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/cat.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c2 r2" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/tree.webp" alt="In a tree biting a branch" />
+                </p>
+                <p class="c1 r2">
+                    <img src="assets/img/my-cat/catwalk.webp" alt="Mio's catwalk" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/my-cat/belly.webp" alt="On his back getting belly rubs" />
+                </p>
+            </div>
+
+            <div id="personal-life" class="square personal-life">
+                <p class="c1 r2">
+                    <img src="assets/img/personal-life/diploma.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>About Me</h2>
+                    Hi, I am
+                    <span id="age-max">? Years</span> old and graduated from the HTL Salzburg in may 2021. I was born and raised in Salzburg and currently have my own flat,
+                    although I am not planning on staying here. Software development, gaming and repairing mobile phones myself count to my hobbies. After having tried out many
+                    different sports I stuck with dancing where I met my dancing partner and girlfriend Elena.
+                </div>
+                <p class="c1 r2">
+                    <img src="assets/img/personal-life/ellie.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Elena</h2>
+                    My beautiful girlfriend. She is currently
+                    <span id="age-elena">? Years</span>
+                    old and means the world to me. We met
+                    <span id="age-dance">? Years</span>
+                    ago in a dance class and it didn't take long until we became dance partners, opening balls and dancing in formations. After 2 years we started our relationship
+                    in november 2020. She graduated in may 2020 and currently visits university, studying graphic design. Elena loves crafting, drawing and reading.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/portrait.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/couple.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Friends</h2>
+                    Most of my friends I am still in contact with I met in dance school as the majority of my childhood friends and former school classmates are studying or working
+                    in different cities now. Nonetheless, the closest of my friends and I still try to keep in contact through talking on discord or going on an adventure every now
+                    and then.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/friends.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/illusion.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/mountain.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Croatia</h2>
+                    The best adventure I have ever been on has to the trip to croatia with Elena and her family. Sleeping in a tiny tent at the rocky beach of a clear water ocean
+                    bay. Watching the stars at night, haggling for fresh fish in the morning and dipping into the cool blue ocean's water at noon. We also went stand up paddling
+                    and did some hiking over the little mountains of Cres.
+                </div>
+                <p class="c1 r2">
+                    <img src="assets/img/personal-life/forest.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/surf.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/icecream.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/bay.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c2 r1">
+                    <img src="assets/img/personal-life/croatia.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Adventure</h2>
+                    I love doing backyard campfires with friends and throwing in any branch I can find. Over the years I have also been on the occasional snowboard trip, though I
+                    wouldn't say I'm great. My girlfriend and I love carving pumpkins and building snow animals together. The adventures I'm most proud of are everything I've done
+                    in the urbex category.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/campfire.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/pumpkin.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/snow-elephant.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Urban Exploration</h2>
+                    or short urbex describes the act of exploring abandoned buildings, hidden places or high rooftops. I came across this hobby through my way too short parkour
+                    journey and it has fascinated me ever since. Climbing cranes and buildings, jumping across rooftops and just wanting to know what lies behind that old factory
+                    I've walked past my whole life.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/paracelsius.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c2 r2" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/knees.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c2 r1">
+                    <img src="assets/img/personal-life/gaisberg.webp" alt="Cat and 2 little paws" />
+                </p>
+                <div class="c1" style="aspect-ratio: 1">
+                    <h2>Military</h2>
+                    As an austrian citizen, I absolved my 6 month mandatory military service in 2021. Although not having had a good time at all there and not really accomplishing
+                    anything nor earning any savings during this time period, my relationship with my girlfriend grew a lot stronger.
+                </div>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/military.webp" alt="Cat and 2 little paws" />
+                </p>
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/doggo.webp" alt="Cat and 2 little paws" />
+                </p>
+
+                <p class="c1" style="aspect-ratio: 1">
+                    <img src="assets/img/personal-life/march.webp" alt="Cat and 2 little paws" />
+                </p>
+            </div>
+        </section>
+
+        <img id="to-top" class="to-top" src="assets/svg/to-top.svg" alt="Back to top" />
+    </body>
 </html>

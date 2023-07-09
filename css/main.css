@@ -6,7 +6,7 @@
   --night-text: lightgray;
   --contrast: #000000b5;
   --accent: #313058;
-  --collage-gap: 1.2vmax;
+  --collage-gap: min(23px, 1.2vmax);
   --border-radius: 2.3rem;
 }
 
@@ -36,157 +36,117 @@ section {
 .content {
   padding: 0;
 }
-
 .content .hero {
   padding: 7.6vmin 0;
   width: 400px;
   margin: 0 auto;
 }
-
 .content .hero .name {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .content .hero .name .capital {
   font-family: "Libre+Baskerville";
   font-size: 12em;
   line-height: 0.67em;
   margin-right: 0.04em;
 }
-
 .content .hero .name .rest {
   line-height: 2.8em;
 }
-
 .content .hero .name .rest .first-name {
   font-size: 3.58em;
 }
-
 .content .hero .name .rest .last-name {
   line-height: 0.98em;
   font-size: 6.1em;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .content .hero .name .rest .last-name .capital-i {
   line-height: 1.05em;
   margin-right: 0.05em;
   font-family: "Libre+Baskerville";
 }
-
 .content .hero .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-top: 1em;
 }
-
 .content .hero .contact ul li {
   font-size: 1.4em;
   margin-bottom: 0.7em;
 }
-
 .content .hero .contact ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .content .hero .contact ul li a:hover span {
   width: 100%;
-  -webkit-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
-
+.content .hero .contact ul li a:not(:hover) span {
+  width: 0%;
+  transition: width 350ms ease-out;
+}
 .content .hero .contact ul li a img {
   width: 50px;
   height: 50px;
 }
-
 .content .hero .contact ul li a div {
   margin: auto 0.5em;
 }
-
 .content .hero .contact ul li a div span {
   display: block;
   background: var(--night-text);
-  width: 0%;
   height: 2px;
   left: 0%;
   top: 100%;
 }
-
 .content .hero .contact .portrait {
   width: 100%;
-  -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
-  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-  -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
-          mask-image: -webkit-gradient(linear, left top, left bottom, color-stop(50%, black), to(transparent));
-          mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+  transform: scaleX(-1);
+  -webkit-mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
+          mask-image: linear-gradient(to bottom, rgb(0, 0, 0) 50%, transparent 100%);
 }
-
 .content .grid {
   padding: 0;
   height: 500px;
   width: 100%;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto auto;
-      grid-template-columns: auto auto;
+  grid-template-columns: auto auto;
 }
-
 .content .grid a {
   position: relative;
   overflow: hidden;
 }
-
 .content .grid a:hover div {
-  -webkit-transform: scale(1.3);
-          transform: scale(1.3);
+  transform: scale(1.3);
 }
-
 .content .grid a .projects-img {
   background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/projects.webp");
 }
-
 .content .grid a .dancing-img {
   background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/dancing.webp");
 }
-
 .content .grid a .my-cat-img {
   background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/my-cat.webp");
 }
-
 .content .grid a .personal-life-img {
   background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/personal-life.webp");
 }
-
 .content .grid a div {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 100%;
   width: 100%;
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   max-height: 100%;
   max-width: 100%;
 }
-
 .content .grid a span {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 100%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   color: white;
   font-size: 2.4em;
@@ -196,57 +156,39 @@ section {
 .collage {
   padding: 0;
 }
-
 .collage .square {
   padding: var(--collage-gap);
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
 }
-
 .collage .square ul {
   padding: 0.5em;
   list-style-type: "• ";
 }
-
 .collage .square div {
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   padding: calc(0.3em + 0.9vw);
   margin: var(--collage-gap);
   border-radius: var(--border-radius);
   background-color: var(--accent);
-  font-size: calc(1em + 0.25vw);
+  font-size: 1.3rem;
   text-align: justify;
 }
-
 .collage .square div:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 .collage .square div h2 {
   margin-top: 0;
   margin-bottom: 0.5em;
   font-size: 2em;
 }
-
 .collage .square p {
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   margin: var(--collage-gap);
 }
-
 .collage .square p:hover {
-  -webkit-transform: scale(1.02);
-          transform: scale(1.02);
+  transform: scale(1.02);
 }
-
 .collage .square p img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -254,83 +196,65 @@ section {
   height: 100%;
   border-radius: var(--border-radius);
 }
-
 .collage .square .c1 {
   grid-column: span 1;
 }
-
 .collage .square .c2 {
   grid-column: span 2;
 }
-
 .collage .square .r1 {
   grid-row: span 1;
 }
-
 .collage .square .r2 {
   grid-row: span 2;
 }
-
 .collage .projects {
-  -ms-grid-columns: (minmax(650px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(650px, 1fr));
 }
-
 .collage .projects .project {
-  -webkit-transition: -webkit-transform 0.4s ease;
-  transition: -webkit-transform 0.4s ease;
   transition: transform 0.4s ease;
-  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
   padding: 0.9vw;
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 50% 50%;
-      grid-template-columns: 50% 50%;
-  -ms-grid-rows: 50% 50%;
-      grid-template-rows: 50% 50%;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
   aspect-ratio: 1;
   margin: var(--collage-gap);
   border-radius: var(--border-radius);
   background-color: var(--accent);
 }
-
 .collage .projects .project:hover {
-  -webkit-transform: scale(1.01);
-          transform: scale(1.01);
+  transform: scale(1.01);
 }
-
 .collage .projects .project p:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
-
 .collage .projects .project div {
   padding: 0;
   margin: 1em;
+  margin-bottom: 0px;
   padding-bottom: 125px;
   grid-column: span 2;
   grid-row: span 1;
   position: relative;
 }
-
 .collage .projects .project div:hover {
-  -webkit-transform: none;
-          transform: none;
+  transform: none;
 }
-
 .collage .projects .project div h2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 0;
   margin-bottom: 0.5em;
 }
-
 .collage .projects .project div h2 span {
   text-align: right;
   float: right;
   font-size: 0.8em;
   font-weight: normal;
   display: block;
+  align-self: center;
 }
-
 .collage .projects .project ul {
   list-style-type: none;
   padding: 0;
@@ -339,46 +263,30 @@ section {
   position: absolute;
   height: 125px;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
-
 .collage .projects .project ul li {
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 50px;
   margin-top: auto;
 }
-
 .collage .projects .project ul li a {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .collage .projects .project ul li a:hover span {
   width: 100%;
-  -webkit-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
-
 .collage .projects .project ul li a img {
   width: 50px;
   height: 50px;
 }
-
 .collage .projects .project ul li a dt {
   margin: auto 0.5em;
 }
-
 .collage .projects .project ul li a dt span {
   display: block;
   background: var(--night-text);
@@ -386,18 +294,14 @@ section {
   height: 2px;
   left: 0%;
   top: 100%;
-  -webkit-transition: width 350ms ease-out;
   transition: width 350ms ease-out;
 }
-
 .collage .projects .project ul .lang {
   position: absolute;
   right: 0;
   top: 75%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
 .collage .projects p {
   aspect-ratio: 1;
   grid-column: span 1;
@@ -417,8 +321,6 @@ section {
 
 @media only screen and (min-width: 1080px) {
   .content .hero {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     width: 1000px;
   }
@@ -432,11 +334,9 @@ section {
     margin: auto 1em auto 0;
   }
   .content .grid {
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
+    grid-template-columns: auto auto auto auto;
   }
 }
-
 @media only screen and (min-height: 860px) and (min-width: 1080px) {
   .content {
     height: 100vh;
@@ -446,14 +346,12 @@ section {
     bottom: 0;
   }
 }
-
 @media only screen and (max-width: 1820px) {
   .collage .square .project {
     aspect-ratio: unset;
     display: block;
   }
 }
-
 @media only screen and (max-width: 1246px) {
   .collage .square .c2 {
     grid-column: span 1;
@@ -463,7 +361,6 @@ section {
     aspect-ratio: 1;
   }
 }
-
 @media only screen and (max-width: 838px) {
   .collage .square .c2 {
     aspect-ratio: 1;
@@ -475,17 +372,12 @@ section {
     aspect-ratio: unset;
   }
   .collage .projects {
-    -ms-grid-columns: auto;
-        grid-template-columns: auto;
-  }
-  .collage .projects .project div span {
-    width: 100%;
+    grid-template-columns: auto;
   }
   .collage .projects .project .lang {
     height: 100%;
   }
 }
-
 @media only screen and (max-width: 420px) {
   .content .hero {
     width: 360px;
@@ -493,7 +385,6 @@ section {
   }
   .collage .square {
     padding: 0;
-    -ms-grid-columns: 100%;
-        grid-template-columns: 100%;
+    grid-template-columns: 100%;
   }
 }

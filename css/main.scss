@@ -6,7 +6,7 @@
     --night-text: lightgray;
     --contrast: #000000b5;
     --accent: #313058;
-    --collage-gap: 1.2vmax;
+    --collage-gap: min(23px, 1.2vmax);
     --border-radius: 2.3rem;
 }
 
@@ -89,6 +89,11 @@ section {
                             transition: width 350ms ease-out;
                         }
 
+                        &:not(:hover) span {
+                            width: 0%;
+                            transition: width 350ms ease-out;
+                        }
+
                         img {
                             width: 50px;
                             height: 50px;
@@ -100,7 +105,6 @@ section {
                             span {
                                 display: block;
                                 background: var(--night-text);
-                                width: 0%;
                                 height: 2px;
                                 left: 0%;
                                 top: 100%;
@@ -134,26 +138,21 @@ section {
             }
 
             .projects-img {
-                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
-                    radial-gradient(ellipse at left, var(--contrast), transparent),
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent),
                     url("../assets/img/hero/projects.webp");
             }
 
             .dancing-img {
-                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
-                    radial-gradient(ellipse at left, var(--contrast), transparent),
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent),
                     url("../assets/img/hero/dancing.webp");
             }
 
             .my-cat-img {
-                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
-                    radial-gradient(ellipse at left, var(--contrast), transparent),
-                    url("../assets/img/hero/my-cat.webp");
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/my-cat.webp");
             }
 
             .personal-life-img {
-                background-image: radial-gradient(ellipse at right, var(--contrast), transparent),
-                    radial-gradient(ellipse at left, var(--contrast), transparent),
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent),
                     url("../assets/img/hero/personal-life.webp");
             }
 
@@ -206,7 +205,7 @@ section {
             margin: var(--collage-gap);
             border-radius: var(--border-radius);
             background-color: var(--accent);
-            font-size: calc(1em + 0.25vw);
+            font-size: 1.3rem; // TODO: max at 1080p
             text-align: justify;
 
             h2 {
@@ -276,6 +275,7 @@ section {
             div {
                 padding: 0;
                 margin: 1em;
+                margin-bottom: 0px;
                 padding-bottom: 125px;
                 grid-column: span 2;
                 grid-row: span 1;
@@ -286,6 +286,9 @@ section {
                 }
 
                 h2 {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
                     margin-top: 0;
                     margin-bottom: 0.5em;
 
@@ -295,6 +298,7 @@ section {
                         font-size: 0.8em;
                         font-weight: normal;
                         display: block;
+                        align-self: center;
                     }
                 }
             }
@@ -446,9 +450,6 @@ section {
             grid-template-columns: auto;
 
             .project {
-                div span {
-                    width: 100%;
-                }
                 .lang {
                     height: 100%;
                 }
