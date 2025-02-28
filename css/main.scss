@@ -205,7 +205,7 @@ section {
             margin: var(--collage-gap);
             border-radius: var(--border-radius);
             background-color: var(--accent);
-            font-size: 1.3rem; // TODO: max at 1080p
+            font-size: 1.3rem;
             text-align: justify;
 
             h2 {
@@ -401,6 +401,10 @@ section {
         #my-cat,
         #personal-life {
             grid-template-columns: repeat(auto-fill, minmax(calc(420px + 2.3vw), 1fr)) !important;
+        }
+
+        #projects div {
+            font-size: 1.2rem;
         }
     }
 }
