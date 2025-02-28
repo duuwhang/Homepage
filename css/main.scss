@@ -391,13 +391,17 @@ section {
     .content .grid {
         height: 48vh;
     }
-    
+
     .projects {
         grid-template-columns: repeat(auto-fill, minmax(calc(700px + 5vw), 1fr)) !important;
     }
 
-    .collage .square {
-        grid-template-columns: repeat(auto-fill, minmax(calc(420px + 2.3vw), 1fr)) !important;
+    .collage {
+        #dancing,
+        #my-cat,
+        #personal-life {
+            grid-template-columns: repeat(auto-fill, minmax(calc(420px + 2.3vw), 1fr)) !important;
+        }
     }
 }
 

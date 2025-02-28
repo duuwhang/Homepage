@@ -333,7 +333,9 @@ section {
   .projects {
     grid-template-columns: repeat(auto-fill, minmax(calc(700px + 5vw), 1fr)) !important;
   }
-  .collage .square {
+  .collage #dancing,
+  .collage #my-cat,
+  .collage #personal-life {
     grid-template-columns: repeat(auto-fill, minmax(calc(420px + 2.3vw), 1fr)) !important;
   }
 }
