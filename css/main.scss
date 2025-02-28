@@ -96,7 +96,7 @@ section {
 
                         img {
                             width: 50px;
-                            height: 50px;
+                            aspect-ratio: 1/1;
                         }
 
                         div {
@@ -376,6 +376,21 @@ section {
     right: 2vmin;
     bottom: 2vmin;
     z-index: 999;
+}
+
+@media only screen and (min-width: 2000px) {
+    .hero {
+        width: calc(415px + 25vw) !important;
+        font-size: calc(5px + 0.45vw);
+
+        .contact ul img {
+            width: calc(33px + 0.8vw) !important;
+        }
+    }
+
+    .content .grid {
+        height: 48vh;
+    }
 }
 
 @media only screen and (min-width: 1080px) {
