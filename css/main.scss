@@ -148,7 +148,8 @@ section {
             }
 
             .my-cat-img {
-                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent), url("../assets/img/hero/my-cat.webp");
+                background-image: radial-gradient(ellipse at right, var(--contrast), transparent), radial-gradient(ellipse at left, var(--contrast), transparent),
+                    url("../assets/img/hero/my-cat.webp");
             }
 
             .personal-life-img {
