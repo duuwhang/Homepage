@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "build:js": "esbuild src/script.js --minify --outfile=public/script.js",
+    "build:css": "sass src/scss/main.scss public/css/main.css --style=compressed --no-source-map",
+    "build": "npm run build:js && npm run build:css"
+  },
+  "devDependencies": {
+    "esbuild": "^0.25.0",
+    "sass": "^1.90.0"
+  }
+}
