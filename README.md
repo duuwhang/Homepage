@@ -1,6 +1,6 @@
 # Homepage
 
-My personal Homepage can be found at https://maxirran.com.
+My personal Homepage can be found at https://maxirran.com/web.
 It was made in plain HTML, SCSS, JS without framework nor any dependencies.
 
 On there can be found:
