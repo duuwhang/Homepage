@@ -1,2 +1,26 @@
+# Search engines
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: DuckDuckBot
+User-agent: Applebot
+User-agent: YandexBot
+Allow: /
+
+# Link previews (uses the og: tags when the page is shared)
+User-agent: facebookexternalhit
+User-agent: Twitterbot
+User-agent: LinkedInBot
+User-agent: Slackbot
+User-agent: Discordbot
+User-agent: WhatsApp
+User-agent: TelegramBot
+Allow: /
+
+# Opt out of AI training by Google and Apple, even though their search crawlers are allowed
+User-agent: Google-Extended
+User-agent: Applebot-Extended
+Disallow: /
+
+# Everyone else
 User-agent: *
 Disallow: /
