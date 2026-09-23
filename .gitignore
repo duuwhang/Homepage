@@ -1,0 +1,20 @@
+# IDEs and editors
+.idea/
+.vscode/
+*.iml
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# SCSS compiler output (main.css itself is tracked for deployment)
+.sass-cache/
+*.css.map
+
+# Logs and temp files
+*.log
+*.tmp
